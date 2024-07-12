@@ -1,13 +1,14 @@
 .mainPage {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  max-width: 100%;
+  min-height: 100vh;
+  width: 100vw;
 
-  padding: 55px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 
   overflow: hidden;
 }
@@ -17,15 +18,11 @@
   animation: fadeIn 3s forwards;
 }
 
-.section {
-  height: 100vh;
-}
-
 .nameContainer {
   position: relative;
 
   .name {
-    font-size: calc(100vw / 12); // 12 characters in title
+    font-size: calc(28px + 100vw / 12); // 12 characters in my name
     text-align: center;
   }
 
@@ -76,6 +73,8 @@
 
   animation-duration: 350ms;
 
+  margin-top: 25px;
+
   :nth-child(1) {
     animation-delay: 1.5s;
   }
@@ -86,7 +85,8 @@
 
 .downArrow {
   position: relative;
-  bottom: -75px;
+
+  margin-top: 50px;
 
   animation: pointDown 4.5s infinite;
 

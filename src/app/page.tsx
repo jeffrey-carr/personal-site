@@ -12,10 +12,10 @@ import InteractiveBackground from "@/components/InteractiveBackground/Interactiv
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.background}>
-        <InteractiveBackground />
-      </div>
       <section className={cx(styles.section, styles.mainPage)}>
+        <div className={styles.background}>
+          <InteractiveBackground />
+        </div>
         <div className={styles.nameContainer}>
           <h1 className={styles.name}>
             Jeffrey Carr
