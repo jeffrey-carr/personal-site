@@ -22,31 +22,8 @@
   position: relative;
 
   .name {
-    font-size: calc(28px + 100vw / 12); // 12 characters in my name
+    font-size: min(calc(28px + 100vw / 12), 120px); // 12 characters in my name
     text-align: center;
-  }
-
-  .leftBlocker,
-  .rightBlocker {
-    position: absolute;
-
-    display: inline-block;
-    height: 100%;
-    width: 50%;
-
-    background-color: var(--background-color, black);
-  }
-
-  .rightBlocker {
-    left: 50%;
-
-    animation: slideRight 1s forwards;
-  }
-
-  .leftBlocker {
-    left: 0;
-
-    animation: slideLeft 1s forwards;
   }
 }
 
