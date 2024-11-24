@@ -34,7 +34,7 @@ export default function Home() {
         <div className={styles.profileButtons}>
           <AnchorButton
             className={styles.fadeInAndUp}
-            href={"https://github.com/jcarr98"}
+            href={"https://github.com/jeffrey-carr"}
             newTab={true}
           >
             Github Profile
