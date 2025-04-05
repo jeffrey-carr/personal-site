@@ -69,7 +69,6 @@ export default function Home() {
             collaborate and learn about programming. In college, I started a video game development club to help other students help{" "}
             each other learn the in&apos;s and out&apos;s of video game development. The club grew up to over 50 members.
           </p>
-          <br />
           <p>
             In my free time, I like to play around with programming projects trying to learn new skills. I also enjoy playing sports{" "}
             with my friends. If I&apos;m feeling especially active that day, I might enjoy going outside on a hike. A couple summers ago I{" "}
@@ -99,9 +98,19 @@ export default function Home() {
               saving favorite recipes, creating new recipes, and editing existing recipes.
             </li>
             <li>
-              <a href="https://games.jeffreycarr.dev" target="_blank" rel="noreferrer">Web Games</a>. These are some {" "}
-              simple web games that I created to practice my code and show some games to my friends. This site was{" "}
-              is a NextJS app with custom SASS.
+              <p>
+                <a href="https://games.jeffreycarr.dev" target="_blank" rel="noreferrer">Web Games</a>. These are some {" "}
+                simple web games that I created to practice my code and show some games to my friends. This site boasts{" "}
+                a Sveltekit 5 frontend and a Golang backend.
+              </p>
+              <p>
+                This project was also a great opportunity to work on creating a continuous deployment pipeline. The repo is{" "}
+                set up to automatically run a deploy script when a new tag is pushed to the repo. The deploy script is a{" "}
+                Github Action. The action will compile the Go code, zip the compiled code along with the production config{" "}
+                files, then upload that as an artifact. It will then SSH to my cloud VM, download the artifact, unzip the{" "}
+                file to the correct directory, and restart the service. The action then triggers a Cloudflare webhook to{" "}
+                trigger a deployment of the frontend.
+              </p>
             </li>
           </ol>
         </InfoSection>
